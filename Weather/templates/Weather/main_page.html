@@ -1,0 +1,44 @@
+{% load sass_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check the weather</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% sass_src 'css/main_page.scss' %}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">Weather Forecast</h1>
+
+    {% if error %}
+    <div class="alert alert-danger" role="alert">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    {% csrf_token %}
+    <form action="" method="post">
+        <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" name="city" placeholder="Enter city">
+        </div>
+        <div class="mb-3">
+            <label for="start-date" class="form-label">Start Date</label>
+            <input type="date" class="form-control" name="start-date">
+        </div>
+        <div class="mb-3">
+            <label for="end-date" class="form-label">End Date</label>
+            <input type="date" class="form-control" name="end-date">
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

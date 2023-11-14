@@ -1,0 +1,46 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js");
+body {
+  background-color: #f8f9fa;
+  font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+.container {
+  text-align: center;
+  margin-top: 50px; }
+
+h1 {
+  color: #007bff; }
+  h1 a {
+    text-decoration: none; }
+
+.row-cols-md-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.col {
+  margin-bottom: 20px; }
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.card-img-top {
+  width: 38%;
+  height: 120px;
+  object-fit: cover; }
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.card-text {
+  margin-bottom: 5px; }
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 80px; }
+  .card-title {
+    font-size: 1.2rem; } }
+
+/*# sourceMappingURL=result_page.css.map */

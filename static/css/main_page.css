@@ -1,0 +1,62 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css");
+body {
+  background-color: #f8f9fa;
+  font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+.container {
+  text-align: center;
+  margin-top: 50px; }
+  .container .alert {
+    color: #dd0000;
+    margin-bottom: 20px; }
+
+h1 {
+  color: #007bff; }
+  h1 a {
+    text-decoration: none; }
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  form input,
+  form label,
+  form button {
+    margin-bottom: 15px; }
+  form input,
+  form button {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s; }
+    form input:focus,
+    form button:focus {
+      border-color: #007bff;
+      outline: none; }
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; }
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+    form button:hover {
+      background-color: #0056b3; }
+
+@media (min-width: 576px) {
+  form {
+    max-width: 400px;
+    margin: 0 auto; } }
+
+@media (max-width: 576px) {
+  form {
+    padding: 15px; }
+    form input,
+    form button {
+      padding: 10px; } }
+
+/*# sourceMappingURL=main_page.css.map */
